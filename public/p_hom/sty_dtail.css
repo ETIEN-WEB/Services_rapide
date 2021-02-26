@@ -1,0 +1,171 @@
+.product-detail{
+    margin: -25px 0px !important;
+}
+
+.product-detail .product-content .price h4 p{
+    font-size: 8px !important;
+}
+
+.product-detail .product-content .price{
+    margin-bottom: 4 !important;
+}
+    
+.product-content{
+    position:relative;
+    
+}
+/*      Annonces simillaires  */
+/*.product-item{
+    
+    margin-left: -13px;
+    margin-right: -13px;
+}*/
+
+.product .section-header {
+    margin-bottom: 0px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 2px !important;
+}
+
+.annonces{
+    padding-top: 5px !important;
+      background-color: blue !important;
+}
+
+
+
+    /*.product-item{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }*/
+    
+    
+
+
+
+
+.ratting{
+   
+    
+    font-size: 14px;
+    background-color:  #f8675a !important;
+    text-align: center;
+    margin-bottom: -7px;
+    
+}
+
+h2{
+    color: rgb(34, 10, 247);
+    font-size: 15px !important;
+}
+
+.product-content .title h2{
+    color: rgb(34, 10, 247);
+    font-size: 28px !important;
+}
+
+
+ h3{
+    color: black !important;
+    font-size: 15px !important;
+}
+
+.product-title{
+   
+    border-radius: 8px 8px 0px 0px !important;
+ }
+ 
+  .product-price{
+     /*border: 1px solid black;*/
+    border-radius: 0px 0px 8px 8px  !important;
+    padding-left: 2px !important;
+    padding-bottom: -15px !important;
+    height: 150px !important;
+    background-color: white !important;
+    color: black !important;
+ }
+
+ .igoua{
+    color: #f0bb2f !important;
+    font-weight: bold !important;
+}
+
+.douman{
+ color: #595959 !important;
+ font-size: 14px !important;
+ font-weight: bold !important;
+}
+
+  .lft{
+      float: left;
+      /*margin-bottom: 50px !important;*/
+  }
+  .rigt{
+     float: right;
+     /*margin-top: 8px;*/
+  }
+
+  .brand {
+    margin-bottom: 4px !important;
+}
+ 
+
+  /* écran inférieur à  768px (les tablettes)  */
+@media  (max-width: 768px) {
+    .bordure .product-item{
+        margin-left: -8px !important;
+        margin-right: -8px !important;
+        margin-bottom: 8px !important;
+    }
+    }
+    /* écran superieur à  775px (les grands édran)  */
+    @media  (min-width: 768px) {
+        .annonces{
+            margin-right: 35px !important;
+            margin-left: 35px !important;
+        }
+    
+        .product-item{
+            margin-left: 5px  !important;   
+            margin-right: 5px  !important;
+            margin-bottom: 8px  !important;
+        }
+      }
+    
+      /* écran inférieur à  380px (les téléphone)  */
+    @media (max-width: 380px) {
+    
+        .bordure .product-item{
+            margin-left: -12px !important;
+            margin-right: -12px !important;
+            margin-bottom: 7px !important;
+        }
+    
+        .product-image a img{
+            height: 140px !important;
+        }
+
+        .product .section-header {
+            margin-bottom: 0px !important;
+            padding-top: 4px !important;
+            padding-bottom: 4px !important;
+            padding-left: 2px !important;
+            
+        }
+
+        .product .section-header h1 {
+            margin-bottom: 0px !important;
+            padding-top: 4px !important;
+            padding-bottom: 4px !important;
+            padding-left: 2px !important;
+            font-size: 20px !important;
+        }
+        
+      }
+
+
+  /*.product-item .product-image .product-action a img{
+     max-width : 100% !important;
+     max-height : 100% !important;
+ } */

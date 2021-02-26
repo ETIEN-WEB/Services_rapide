@@ -1,0 +1,42 @@
+h2{
+    color: rgb(34, 10, 247);
+    font-size: 15px !important;
+}
+
+.profil {
+    border: 1px solid black;
+}
+
+.product-detail .tab-contnt {
+    background: #ffffff !important;
+    padding: 0px !important;
+}
+
+
+ .fileU img {
+    max-width: 90px !important;
+    max-height: 100px !important;
+    margin-right: 0px !important;
+}
+
+.espace{
+    margin-bottom: 0px !important;
+}
+
+.remonter div{
+    margin-bottom: -20px !important;
+    font-size: 14px;
+    background-color: white;
+    color: tomato;
+
+}
+table{
+    border: 1px solid black;
+}
+
+.ligne{
+    background: chartreuse;
+    font-size: 18px;
+    color: white;
+}
+

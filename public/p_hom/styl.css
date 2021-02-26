@@ -1,0 +1,188 @@
+.header {
+    margin-top: 0px !important;
+    padding-top: -40px !important;
+    padding-bottom: -30px !important;
+}
+
+.header .container-fluid{
+    background-color: rgb(235, 235, 245) !important;
+}
+
+.kate{
+    background-color: powderblue;
+    font-weight: bold;
+}
+.bordure{
+    padding-top: 5px !important;
+    background-color: rgb(235, 235, 245) !important;
+    
+}
+
+
+.ratting{
+   
+    
+    font-size: 14px;
+    background-color:  #f8675a !important;
+    text-align: center;
+    margin-bottom: -7px;
+    
+}
+
+
+
+h2{
+    color: rgb(34, 10, 247);
+    font-size: 15px !important;
+}
+h3{
+    color: black !important;
+    font-size: 15px !important;
+}
+
+.product-title{
+   
+   border-radius: 8px 8px 0px 0px !important;
+    
+}
+
+ .product-price{
+    /*border: 1px solid black;*/
+   border-radius: 0px 0px 8px 8px  !important;
+   padding-left: 2px !important;
+   padding-bottom: -15px !important;
+   height: 150px !important;
+   background-color: white !important;
+   color: black !important;
+}
+.igoua{
+    color: #f0bb2f !important;
+    font-weight: bold !important;
+}
+
+.douman{
+ color: #595959 !important;
+ font-size: 14px !important;
+ font-weight: bold !important;
+}
+
+ .lft{
+     float: left;
+ }
+
+ .rigt{
+    float: right;
+ }
+
+/*.product-item .product-image .product-action a img{
+    
+    max-width : 100% !important;
+    max-height : 100% !important;
+    
+}*/
+
+.navbar-nav .nav-item a{
+    font-size: 13px !important;
+}
+
+.call-to-action{
+    margin-bottom: 0px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////*/
+
+/* écran inférieur à  768px (les tablettes)  */
+@media (max-width: 768px) {
+    .row .col-md-12 .product-view-top {
+        
+    }
+    .annonces{
+        margin-right: 50px !important;
+        margin-left: 50px !important;
+    }
+
+    .product-view .product-view-top {
+        margin-bottom: 4px !important;
+    } 
+
+    .product-item{
+    
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+        
+
+    
+  }
+
+  /* ///////////////////////////////////////////////////////////////////////////////*/
+
+  /* écran superieur à  775px (les grands édran)  */
+  @media (min-width: 775px) {
+    
+    .annonces{
+        margin-top: -4px !important;
+        margin-right: 70px !important;
+        margin-left: -20px !important;
+    }
+
+    .product-view .product-view-top {
+        margin-bottom: 2px !important;
+        margin-left: -8px !important;
+    } 
+    
+    .product-item{
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    
+    
+
+  }
+
+/* écran inférieur à  380px (les téléphone)  */
+@media (max-width: 380px) {
+    .select_cate{
+        display: none !important;
+    }
+    
+    .annonces{
+        margin-right: 2px !important;
+        margin-left: 2px !important;
+    }
+
+    .product-view .product-view-top {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        margin-right: 4px !important;
+        margin-left: 4px !important;
+        
+    }
+
+    .product-item{
+        margin-left: -11px !important;
+        margin-right: -11px !important;
+    }
+
+    .product-image a img{
+        height: 140px !important;
+    }
+    
+  }
+  
+
+
+
+
+ 
+
+
+
+
+/* style="display: inline; margin-bottom: -20px; widt: 150px; height:60px; " 
+style="margin-left:11px; margin-top:-9px; color: rgb(241, 95, 37); " */
+/*
+  */
+
+

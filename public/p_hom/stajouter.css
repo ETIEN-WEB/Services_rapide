@@ -1,0 +1,48 @@
+input, select, textarea{
+    color: black !important;
+}
+
+label strong{
+    color: red;
+}
+
+.search .dropdown .dropdown-toggle {
+    font-size: 15px !important;
+    font-weight: bold;
+    text-transform: uppercase !important;
+}
+
+.soubmit{
+    background-color: salmon !important;
+    color: white !important;
+}
+
+/*div ul li{
+    font-size: 10px;
+}*/
+
+.checkout-summary div h5 {
+    font-weight: bold;
+}
+
+.checkout-summary div ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 5px;
+    
+}
+
+.checkout-summary div ul li::before {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 5px;
+}
+
+h2{
+    color: rgb(34, 10, 247);
+    font-size: 15px !important;
+}
+
+

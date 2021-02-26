@@ -1,0 +1,31 @@
+$(document).on('change','#cateorie_id',function (){
+            if($(this).val() =='autre'){
+                $('.input-autre-hide').remove();
+                $('.input-autre-show').show();
+            }else {
+                selectD($(this).val());
+            }
+            console.log($(this).val());
+
+        });
+      
+//select dynamique
+        function selectD(categorie_id){
+            $('#produit_id').html('');
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $.ajax({
+                url: 'http://127.0.0.1:8000/annonce/select-produit/'+categorie_id,
+                success: function (data) {
+                    $.each(data.produits, function (index,value){
+                        $('#produit_id').append('<option value='+value.id+'>'+value.nom+'</option>');
+                    });
+                },
+                error: function (err){
+                    console.log(err.status);
+                }
+            });
+        }

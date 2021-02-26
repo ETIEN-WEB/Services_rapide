@@ -1,0 +1,40 @@
+
+.rrest .card{
+    margin-top: 70px !important;
+    margin-bottom: 220px !important;
+}
+
+
+h2{
+    color: rgb(34, 10, 247);
+    font-size: 15px !important;
+}
+
+/* écran inférieur à  768px (les tablettes)  */
+@media  (max-width: 768px){
+
+    .col-md-8 .subm_login{
+        margin-bottom: 4px !important;
+        display: block !important;
+    }
+
+    .llogin .card{
+        margin-top: 50px !important;
+        margin-bottom: 100px !important;
+    }
+
+    .rrest .card{
+        margin-top: 70px !important;
+        margin-bottom: 220px !important;
+    }
+
+}
+
+/* écran inférieur à  380px (les téléphone)  */ 
+@media (max-width: 380px){
+    .col-md-8 .subm_login{
+        margin-bottom: 4px !important;
+        display: block !important;
+    }
+}
+
