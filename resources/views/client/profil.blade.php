@@ -56,9 +56,9 @@
                                             <div class="table-responsive">
                                                 <table class="table table-bordered">
                                                     dd($cliannoce->Titre) --}}
-                                                    <div class="row profil">
-                                                        @foreach ($client->annoces as $cliannoce)
-                                                       
+                                                    
+                                                    @foreach ($client->annoces as $cliannoce)
+                                                    <div class="row profil">  
                                                         <?php
                                                             $stamp= strtotime($cliannoce->created_at);
                                                             $ladate= getdate($stamp);
@@ -96,8 +96,9 @@
                                                             
                                                         ?>
                                                         <div class="col-md-3 col-sm-3 col-xs-3 fileU">
-                                                            <img src="{{asset('upload/'.$cliannoce->fileUpload[0])}}" alt="Product Image">
-                                                            
+                                                            <a href="{{url('/detail_offre/'.$cliannoce->id)}}">
+                                                              <img src="{{asset('upload/'.$cliannoce->fileUpload[0])}}" alt="Product Image">
+                                                            </a>
                                                         </div>
                                                         <div class=" col-md-3 col-sm-6 col-xs-6">
                                                             {{$cliannoce->Titre}} <br>
@@ -141,9 +142,8 @@
                                                                     
                                                                 </div>
                                                             </div>
-                                                        @endforeach 
-                                                    </div>
-                                                    
+                                                        </div>
+                                                    @endforeach 
                                                 {{--</table>
                                             </div>
                                         </div>--}}
