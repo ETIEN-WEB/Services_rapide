@@ -27,9 +27,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-8">
-                        @if (Session::has('status'))
-                        <div class="alert alert-success">
-                            {{Session::get('status')}}
+                        @if (Session::has('statu'))
+                        <div class="alert alert-success"> 
+                            {{Session::get('statu')}}
                         </div>
                         @endif
                         <div class="row product-detail-bottom">

@@ -9,7 +9,7 @@ body {
     color: #353535;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    background: rgb(248, 248, 252) !important;
+    background: #f1f1f1 !important;
 }
 
 a {
@@ -684,7 +684,7 @@ h2 {
 
 .feature .feature-content p {
     font-size: 14px;
-    font-family: 'Font Awesome 5 Free';
+   
     margin: 0;
     margin-bottom: -1px;
 }

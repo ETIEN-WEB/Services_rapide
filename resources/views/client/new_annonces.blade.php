@@ -96,11 +96,11 @@
                     <!-- leur fermerture est en bas de la page -->
                                     <div class="col-lg-8">
                                         <div class="checkout-inner">
-                                            @if (Session::has('status'))
-                                    <div class="alert alert-success">
-                                        {{Session::get('status')}}
-                                    </div>
-                                @endif
+                                        @if (Session::has('status'))
+                                            <div class="alert alert-success">
+                                                {{Session::get('status')}}
+                                            </div>
+                                         @endif
                                 @if (count($errors)> 0)
                                     <div class="alert      alert-danger">
                                         <ul> 
@@ -133,7 +133,7 @@
                                             <select class="form-control productville" name="ville" id="ville">
                                                 <option value=""> Villes</option>
                                                 @foreach ($vill as $vil)
-                                                @if ($vil->id != '5')
+                                                @if ($vil->id != '94')
                                                 <option value="{{$vil->id}}" {{(old('ville')==$vil->id)? 'selected':''}}> {{$vil->nom_ville}} </option>
                                                 @endif
                                                 {{--@php
@@ -234,7 +234,7 @@
                                         <input class="form-control" type="text" name="nb_pieces" value="{{ old('nb_pieces') }}" placeholder="pieces">
                                     </div>
                                 </div>
-                                <div class=" form-group row dtailvhicule apparte">
+                                <div class=" form-group row dtailvhicule apparte superficie">
                                     <label class="col-md-2 col-sm-4 col-form-label">Superficie</label>
                                     <div class=" col-md-6 col-sm-8">
                                         <input class="form-control" type="text" name="Superficie" value="{{ old('Superficie') }}" placeholder="Superficie">
@@ -538,7 +538,7 @@ $(document).on('change','.productname', function(){
     
     var sous_cat_id=$(this).val();
     $('.dtailvhicule').css('display', 'none');
-    if(sous_cat_id == 5 ){
+    if(sous_cat_id == 10 ){
        
      $('.dtailvhicule').css('display', 'block');
      $('.apparte').css('display', 'none');
@@ -548,10 +548,33 @@ $(document).on('change','.productname', function(){
         $('#dtailsmart').css('display', 'block');
 
     }
-    if(sous_cat_id == 7 ){
+    if(sous_cat_id == 17) {
         $('.apparte').css('display', 'block');
     }
-    
+    if(sous_cat_id == 18) {
+        $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id == 19 ) {
+        $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id == 20) {
+        $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id ==21) {
+        $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id == 22) {
+        $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id ==24) {
+        $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id == 23){
+        $('.superficie').css('display', 'block');
+    }
+    if(sous_cat_id ==  25){
+        $('.superficie').css('display', 'block');
+    }
 
     $.ajax({
         type:'get',
@@ -590,7 +613,7 @@ $(document).on('change','.productname', function(){
         success:function(data){
             
             $('.modele').empty();
-            $('.modele').append('<option value="0"> Modèles </option>');
+            $('.modele').append('<option value=""> Modèles </option>');
             $.each(data, function (index,subcategory){
                 $('.modele').append('<option value="'+subcategory.nom_modele+'">'+subcategory.nom_modele+'</option>');
                 //console.log(data[i].nom_sous_categorie);

@@ -107,10 +107,11 @@ class PaiementController extends Controller
 
     public function select_par_sous_cat($id){
         $categori= Categorie::get();
+        $catgri = Categorie::all();
         
         $anonce = Annonce::where('sous_categorie_id', $id)->where('status', 1)->orderBy('id', 'desc')->paginate(8);
         $s_ville = Ville::all();
-        return view('client.shop2')->with('anonce', $anonce)->with('categori', $categori)->with('s_ville', $s_ville);
+        return view('client.shop')->with('anonce', $anonce)->with('categori', $categori)->with('s_ville', $s_ville)->with('catgri', $catgri);
     }
 
     

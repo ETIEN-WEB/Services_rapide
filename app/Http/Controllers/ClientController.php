@@ -360,7 +360,9 @@ class ClientController extends Controller
             $annonce->save();
 
             if(Auth::attempt(['email'=>$client->email,'password'=>$request->input('password')])){
-                return redirect('/connex')->with('status', 'L\'annonce a été ajouté avec succès');
+                Session::put('statu','L\'annonce a été ajouté avec succès');
+                
+                return redirect('/connex');
             }else{
                 return redirect('/new_annonces')->with('status', 'Oups un probleme s\'est produit. Veillez resseyer');    
             }

@@ -89,6 +89,8 @@ class PageController extends Controller
         if (Auth::check()) {
             // The user is logged in...
             Session::put('client', Auth::id());
+            /*Session::put('clsttatus', Session::get('statu'));*/
+            
             return redirect('/profil/'.Session::get('client'));
         }
         
@@ -99,7 +101,7 @@ class PageController extends Controller
         if(!Session::has('client')){
             return view('Auth.login');
         }
-        //$categori= Categorie::get();
+        //dd(Session::get('statu'));
         //$anonce= Annonce::find($id);
         $client= User::find($id);
         

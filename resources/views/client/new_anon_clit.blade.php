@@ -468,7 +468,7 @@ $(document).on('change','.productname', function(){
     
     var sous_cat_id=$(this).val();
     $('.dtailvhicule').css('display', 'none');
-    if(sous_cat_id == 5 ){
+    if(sous_cat_id == 10 ){
        
      $('.dtailvhicule').css('display', 'block');
      $('.apparte').css('display', 'none');
@@ -478,8 +478,32 @@ $(document).on('change','.productname', function(){
         $('#dtailsmart').css('display', 'block');
 
     }
-    if(sous_cat_id == 7 ){
+    if(sous_cat_id == 17) {
         $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id == 18) {
+        $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id == 19 ) {
+        $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id == 20) {
+        $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id ==21) {
+        $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id == 22) {
+        $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id ==24) {
+        $('.apparte').css('display', 'block');
+    }
+    if(sous_cat_id == 23){
+        $('.superficie').css('display', 'block');
+    }
+    if(sous_cat_id ==  25){
+        $('.superficie').css('display', 'block');
     }
     
 

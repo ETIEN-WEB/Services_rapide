@@ -10,7 +10,7 @@
                     <div class="col-md-3">
                         <div class="logo">
                             <a href="{{URL::to('/')}}">
-                                <img src="{{asset('frontend/img/logo.png')}}" alt="Logo">
+                                <img src="{{asset('frontend/img/logors.jpg')}}" alt="Logo" width="130px">
                             </a>
                         </div>
                     </div>
